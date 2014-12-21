@@ -12,7 +12,7 @@ Template Name: Articles
             <div class="col-sm-8 col-xs-12 caption">
                 <h3><? the_title() ?></h3>
                 <p><? the_content() ?></p>
-                <button type="button" class="btn btn-default button-right button-margin">Подробнее</button>
+                <a href="<? the_permalink(); ?>" class="btn btn-default button-right button-margin">Подробнее</a>
             </div>
         </div>
     <?

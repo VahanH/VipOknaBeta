@@ -23,7 +23,7 @@ Template Name: Products
     ?>
 </ul>
 
-<div class="row">
+<div class="row margin-bottom">
     <div class="tab-content">
 <?php $query = new WP_Query( array( 'category_name' => 'products') );
 $first="active in";
@@ -40,7 +40,7 @@ endif;
 //wp_reset_query();
 
 ?>
-        <button type="button" class="btn btn-danger button-right">Рассчитать стоимость</button>
+        <button type="button" class="btn btn-danger button-right prod-btn">Рассчитать стоимость</button>
     </div>
 </div>
 

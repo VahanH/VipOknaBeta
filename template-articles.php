@@ -12,7 +12,7 @@ Template Name: Articles
             <div class="col-xs-8 caption">
                 <h3><? the_title() ?></h3>
                 <p><? the_content() ?></p>
-                <button type="button" class="btn btn-default">Подробнее</button>
+                <button type="button" class="btn btn-default button-right">Подробнее</button>
             </div>
         </div>
     <?

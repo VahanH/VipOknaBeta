@@ -4,12 +4,25 @@ footer{
   background: #fff;
   border-top: 1px solid #dedede;
   width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 61px
 }
 
 .vip-nav {
   list-style: none;
 }
 
+#menu-footer-navigation {
+  float: none;
+  display: inline-block;
+  margin: 0 auto;
+  margin-bottom: -5px
+}
+
+.vip-footer-nav{
+  text-align:center
+}
 #menu-footer-navigation > li{
   a[href$="/"]{background-image: url("../img/under_menu1.png");}
   a[href$="about/"]{background-image: url("../img/under_menu2.png");}
@@ -23,5 +36,7 @@ footer{
 #menu-footer-navigation > li > a{
   background-repeat: no-repeat;
   background-position: center center;
-  color:transparent
+  color:transparent;
+  padding-top:20px;
+  padding-bottom:20px;
 }

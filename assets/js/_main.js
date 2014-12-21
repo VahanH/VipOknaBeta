@@ -29,7 +29,14 @@ var Roots = {
   home: {
     init: function() {
       // JavaScript to be fired on the home page
-      console.log("Home page");
+      $('.custom1').owlCarousel({
+        animateOut: 'slideOutDown',
+        animateIn: 'flipInX',
+        items:1,
+        margin:30,
+        stagePadding:30,
+        smartSpeed:450
+      });
     }
   },
   page_template_template_calculator_php: {

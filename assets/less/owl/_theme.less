@@ -52,6 +52,26 @@
   background: #869791;
 }
 
-.owl-stage-outer{
-  max-height: 620px;
+
+@media (max-width: @screen-xs-max) {
+  .owl-stage-outer{
+    max-height: 200px;
+  }
+}
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+  .owl-stage-outer{
+    max-height: 440px;
+  }
+
+}
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+  .owl-stage-outer{
+    max-height: 575px;
+  }
+
+}
+@media (min-width: @screen-lg-min) {
+  .owl-stage-outer{
+      max-height: 620px;
+  }
 }

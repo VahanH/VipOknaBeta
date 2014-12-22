@@ -11,7 +11,7 @@ Template Name: Products
     <?php $query = new WP_Query( array( 'category_name' => 'products') );
     $first="active";
     if ($query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post();?>
-            <li role="presentation" class="<?=$first?>"><a href="#<?=get_the_ID()?>" role="tab" data-toggle="tab" aria-controls="<?=get_the_ID()?>" aria-expanded="false"><? the_title() ?></a></li>
+            <li role="presentation" class="<?=$first?>"><a href="#<?=get_the_ID()?>" role="tab" data-toggle="tab" aria-controls="<?=get_the_ID()?>" aria-expanded="false"><h4><? the_title() ?></h4></a></li>
 
     <?
     $first="";

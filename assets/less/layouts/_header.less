@@ -65,3 +65,30 @@
   }
 
 }
+@media (max-width: @screen-md-min) {
+  .navbar-default .navbar-nav > li:hover > a,.navbar-default .navbar-nav > .active > a{
+    background-position: 10px 10px;
+    padding: 15px 0 15px 45px;
+  }
+  .navbar-default .navbar-nav > .active, .navbar-default .navbar-nav > li:hover {
+    border-top:0;
+    border-left:4px solid #d83232;
+  }
+  .navbar-header {
+    .navbar-brand {
+      padding: 20px 0 10px;
+      font-size: 28px;
+      height: auto;
+      margin-left:15px;
+    }
+
+    address {
+      max-width:150px;
+      font-size: 28px;
+      padding: 0;
+      color: @navbar-default-brand-color;
+      margin-left:20px;
+      margin-bottom:0;
+    }
+  }
+}

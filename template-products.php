@@ -40,7 +40,7 @@ endif;
 //wp_reset_query();
 
 ?>
-        <button type="button" class="btn btn-danger button-right prod-btn">Рассчитать стоимость</button>
+        <button type="button" class="btn btn-danger button-right button-margin prod-btn">Рассчитать стоимость</button>
     </div>
 </div>
 

@@ -23,7 +23,7 @@ Template Name: Products
     ?>
 </ul>
 
-<div class="row margin-bottom">
+<div class="row prod_info margin-bottom">
     <div class="tab-content">
 <?php $query = new WP_Query( array( 'category_name' => 'products') );
 $first="active in";

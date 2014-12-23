@@ -13,7 +13,7 @@ if ($query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post()
     if($q%2==1) echo '<div class="row">'; ?>
     <div class="col-md-6">
         <div class="thumbnail info">
-            <div class="thumb"><? echo get_the_post_thumbnail($id, 'medium'); ?></div>
+            <div class="thumb under-thumbnail-margin"><? echo get_the_post_thumbnail($id, 'medium'); ?></div>
             <div class="caption">
                 <h3><? the_title() ?></h3>
                 <p><? the_content() ?></p>

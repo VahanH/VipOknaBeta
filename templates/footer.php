@@ -1,4 +1,4 @@
-<footer class="content-info" role="contentinfo">
+<footer class="content-info hidden-xs hidden-sm" role="contentinfo">
   <div class="container">
     <?php dynamic_sidebar('sidebar-footer'); ?>
     <nav class="vip-footer-nav" role="navigation">

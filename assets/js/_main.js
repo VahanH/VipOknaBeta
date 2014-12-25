@@ -50,13 +50,6 @@ var Roots = {
     init: function() {
       // JavaScript to be fired on the about us page
     }
-  },
-  // Gallery page
-  page_template_gallery_php: {
-    init: function() {
-      // JavaScript to be fired on the gallery page
-      console.log("Gallery");
-    }
   }
     };
 

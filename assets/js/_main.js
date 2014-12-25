@@ -50,8 +50,18 @@ var Roots = {
     init: function() {
       // JavaScript to be fired on the about us page
     }
+  },
+  // Gallery page
+  page_template_gallery_php: {
+    init: function() {
+      // JavaScript to be fired on the gallery page
+      console.log("Gallery");
+    }
   }
-};
+    };
+
+
+
 
 // The routing fires all common scripts, followed by the page specific scripts.
 // Add additional events for more control over timing e.g. a finalize event

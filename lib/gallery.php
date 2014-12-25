@@ -90,7 +90,7 @@ function roots_gallery($attr) {
         $image = wp_get_attachment_link($id, $size, false, false);
         break;
       case 'none':
-        $image = wp_get_attachment_image($id, $size, false, array('class' => 'thumbnail img-thumbnail'));
+        $image = wp_get_attachment_image($id, $size, false, array('class' => 'thumbnail fancybox img-thumbnail'));
         break;
       default:
         $image = wp_get_attachment_link($id, $size, true, false);
@@ -123,7 +123,7 @@ if (current_theme_supports('bootstrap-gallery')) {
  * Add class="thumbnail img-thumbnail" to attachment items
  */
 function roots_attachment_link_class($html) {
-  $html = str_replace('<a', '<a class="thumbnail img-thumbnail"', $html);
+  $html = str_replace('<a', '<a class="thumbnail fancybox img-thumbnail"', $html);
   return $html;
 }
 add_filter('wp_get_attachment_link', 'roots_attachment_link_class', 10, 1);

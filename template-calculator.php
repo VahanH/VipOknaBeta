@@ -3,87 +3,89 @@
 Template Name: Calculator
 */
 ?>
-<div class="panel panel-danger">
-    <!-- Default panel contents -->
-    <div class="panel-heading"><h4>1. Тип конструкции</h4></div>
-    <div class="panel-body">
-        <div>
-                    <label>
-                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option1" >
-                       <span> Глухое окно</span>
+<div class="col-xs-12">
+    <div class="panel panel-danger">
+        <!-- Default panel contents -->
+        <div class="panel-heading"><h4>1. Тип конструкции</h4></div>
+        <div class="panel-body">
+            <div>
+                <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option1">
+                    <span> Глухое окно</span>
 
-                        <img src="<?php bloginfo('template_url'); ?>/assets/img/gluxokno.png">
-                    </label>
+                    <img src="<?php bloginfo('template_url'); ?>/assets/img/gluxokno.png">
+                </label>
 
-                    <label>
-                        <input type="radio"name="optionsRadios" id="optionsRadios3" value="option1" >
-                        <span>Арочное окно</span>
-                        <img src="<?php bloginfo('template_url'); ?>/assets/img/arochokno.png">
+                <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option1">
+                    <span>Арочное окно</span>
+                    <img src="<?php bloginfo('template_url'); ?>/assets/img/arochokno.png">
 
-                    </label>
+                </label>
 
-                    <label>
-                        <input type="radio" name="optionsRadios" id="optionsRadios4" value="option1" >
-                        <span>Арочное окно</span>
-                        <img src="<?php bloginfo('template_url'); ?>/assets/img/krugokno.png">
-
-
-                    </label>
-
-                    <label>
-                        <input type="radio" name="optionsRadios" id="optionsRadios8" value="option1" >
-                        <span>Двухстворчатое окно</span>
-
-                        <img src="<?php bloginfo('template_url'); ?>/assets/img/dvuxokno.png">
-                    </label>
-                    <label>
-                         <input type="radio" name="optionsRadios" id="optionsRadios5" value="option1" >
-                        <span>Трехстворчатое окно</span>
-
-                        <img src="<?php bloginfo('template_url'); ?>/assets/img/trexokno.png">
-                    </label>
-
-                    <label>
-                        <input type="radio" name="optionsRadios" id="optionsRadios7" value="option1" >
-                        <span>Балконное окно</span>
-                        <img src="<?php bloginfo('template_url'); ?>/assets/img/balkonokno.png">
-
-                    </label>
-                    <label>
-                        <input type="radio" name="optionsRadios" id="optionsRadios6" value="option1" >
-                        <span>Трехстворчатое окно</span>
-                        <img src="<?php bloginfo('template_url'); ?>/assets/img/garmoshka.png">
-                    </label>
+                <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios4" value="option1">
+                    <span>Арочное окно</span>
+                    <img src="<?php bloginfo('template_url'); ?>/assets/img/krugokno.png">
 
 
-                    <label>
-                       <input type="radio" name="optionsRadios" id="optionsRadios8" value="option1" >
-                           <span>Дверь</span>
-                        <img src="<?php bloginfo('template_url'); ?>/assets/img/dver.png">
-                    </label>
+                </label>
+
+                <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios8" value="option1">
+                    <span>Двухстворчатое окно</span>
+
+                    <img src="<?php bloginfo('template_url'); ?>/assets/img/dvuxokno.png">
+                </label>
+                <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios5" value="option1">
+                    <span>Трехстворчатое окно</span>
+
+                    <img src="<?php bloginfo('template_url'); ?>/assets/img/trexokno.png">
+                </label>
+
+                <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios7" value="option1">
+                    <span>Балконное окно</span>
+                    <img src="<?php bloginfo('template_url'); ?>/assets/img/balkonokno.png">
+
+                </label>
+                <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios6" value="option1">
+                    <span>Трехстворчатое окно</span>
+                    <img src="<?php bloginfo('template_url'); ?>/assets/img/garmoshka.png">
+                </label>
+
+
+                <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios8" value="option1">
+                    <span>Дверь</span>
+                    <img src="<?php bloginfo('template_url'); ?>/assets/img/dver.png">
+                </label>
+            </div>
         </div>
     </div>
 </div>
 <div>
-    <div class="col-xs-3">
+    <div class="col-md-3 col-sm-6 col-xs-12">
         <div class="panel panel-danger">
-               <!-- Default panel contents -->
-               <div class="panel-heading"><h4>2. Размер</h4></div>
-               <div class="panel-body">
-                   <div class="input-group">
-                       <input type="text" class="form-control" placeholder="Ширина">
-                       <input type="text" class="form-control" placeholder="Высота">
-                   </div>
+            <!-- Default panel contents -->
+            <div class="panel-heading"><h4>2. Размер</h4></div>
+            <div class="panel-body">
+                <div class="input-group">
+                    <input type="text" class="input-width form-control" placeholder="Ширина">
+                    <input type="text" class="input-width form-control" placeholder="Высота">
+                </div>
 
-               </div>
+            </div>
         </div>
     </div>
-    <div class="col-xs-3">
+    <div class="col-md-3 col-sm-6 col-xs-12">
         <div class="panel panel-danger">
             <!-- Default panel contents -->
             <div class="panel-heading"><h4>3. Стеклопакет</h4></div>
             <div class="panel-body">
-                <div class="input-group">
+                <div class="">
                     <select class="form-control input-sm">
                         <option value="">Одномерный</option>
                         <option value="">Двухмерный</option>
@@ -94,12 +96,12 @@ Template Name: Calculator
             </div>
         </div>
     </div>
-    <div class=" col-xs-3">
+    <div class="col-md-3 col-sm-6 col-xs-12">
         <div class="panel panel-danger">
             <!-- Default panel contents -->
             <div class="panel-heading"><h4>4. Профиль</h4></div>
             <div class="panel-body">
-                <div class="input-group">
+                <div class="">
                     <select class="form-control input-sm">
                         <option value="">KBE 58мм</option>
                         <option value="">KBE 70мм</option>
@@ -114,12 +116,12 @@ Template Name: Calculator
             </div>
         </div>
     </div>
-    <div class=" col-xs-3">
+    <div class="col-md-3 col-sm-6 col-xs-12">
         <div class="panel panel-danger">
             <!-- Default panel contents -->
             <div class="panel-heading"><h4>5. Фурнитура</h4></div>
             <div class="panel-body">
-                <div class="input-group">
+                <div class="">
                     <select class="form-control input-sm">
                         <option value="">Roto</option>
                         <option value="">VHC</option>
@@ -133,27 +135,32 @@ Template Name: Calculator
 <div class="clear"></div>
 <div>
 
-    <div class=" col-xs-6">
+    <div class=" col-xs-12 col-sm-6">
         <div class="panel panel-danger">
             <!-- Default panel contents -->
-            <div class="panel-heading"><h4>5. Фурнитура</h4></div>
+            <div class="panel-heading"><h4>6. Опции</h4></div>
             <div class="panel-body">
                 <div class="input-group">
                     <label>
-                        <input type="checkbox" name="optionsRadios" id="optionsRadios2" value="option1" >
-                        <span> Глухое окно</span>
+                        <input type="checkbox" name="optionsRadios" id="optionsRadios2" value="option1">
+                        <span> Подоконник</span>
 
                     </label>
 
                     <label>
-                        <input type="checkbox" name="optionsRadios" id="optionsRadios3" value="option1" >
-                        <span>Арочное окно</span>
+                        <input type="checkbox" name="optionsRadios" id="optionsRadios3" value="option1">
+                        <span>Отлив</span>
 
                     </label>
 
                     <label>
-                        <input type="checkbox" name="optionsRadios" id="optionsRadios4" value="option1" >
-                        <span>Арочное окно</span>
+                        <input type="checkbox" name="optionsRadios" id="optionsRadios4" value="option1">
+                        <span>Откосы</span>
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="optionsRadios" id="optionsRadios4" value="option1">
+                        <span>Москитная сетка</span>
                     </label>
 
                 </div>
@@ -161,30 +168,23 @@ Template Name: Calculator
             </div>
         </div>
     </div>
-    <div class=" col-xs-6">
+    <div class=" col-sm-6 col-xs-12">
         <div class="panel panel-danger">
             <!-- Default panel contents -->
-            <div class="panel-heading"><h4>5. Фурнитура</h4></div>
+            <div class="panel-heading"><h4>7. Услуги</h4></div>
             <div class="panel-body">
                 <div class="input-group">
                     <label>
-                        <input type="checkbox" name="optionsRadios" id="optionsRadios2" value="option1" >
-                        <span> Глухое окно</span>
+                        <input type="checkbox" name="optionsRadios" id="optionsRadios2" value="option1">
+                        <span>Доставка</span>
 
                     </label>
 
                     <label>
-                        <input type="checkbox" name="optionsRadios" id="optionsRadios3" value="option1" >
-                        <span>Арочное окно</span>
+                        <input type="checkbox" name="optionsRadios" id="optionsRadios3" value="option1">
+                        <span>Монтаж</span>
 
                     </label>
-
-                    <label>
-                        <input type="checkbox" name="optionsRadios" id="optionsRadios4" value="option1" >
-                        <span>Арочное окно</span>
-
-                    </label>
-
                 </div>
 
             </div>

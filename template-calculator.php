@@ -31,30 +31,35 @@ Template Name: Calculator
                     </label>
 
                     <label>
-                         <input type="radio" name="optionsRadios" id="optionsRadios5" value="option1" >
+                        <input type="radio" name="optionsRadios" id="optionsRadios8" value="option1" >
                         <span>Двухстворчатое окно</span>
+
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/dvuxokno.png">
+                    </label>
+                    <label>
+                         <input type="radio" name="optionsRadios" id="optionsRadios5" value="option1" >
+                        <span>Трехстворчатое окно</span>
 
                         <img src="<?php bloginfo('template_url'); ?>/assets/img/trexokno.png">
                     </label>
 
                     <label>
-                        <input type="radio" name="optionsRadios" id="optionsRadios6" value="option1" >
-                        <span>трехстворчатое окно</span>
-                        <img src="<?php bloginfo('template_url'); ?>/assets/img/garmoshka.png">
-                    </label>
-
-                    <label>
                         <input type="radio" name="optionsRadios" id="optionsRadios7" value="option1" >
-                        <span>окно</span>
+                        <span>Балконное окно</span>
                         <img src="<?php bloginfo('template_url'); ?>/assets/img/balkonokno.png">
 
                     </label>
+                    <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios6" value="option1" >
+                        <span>Трехстворчатое окно</span>
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/garmoshka.png">
+                    </label>
+
 
                     <label>
                        <input type="radio" name="optionsRadios" id="optionsRadios8" value="option1" >
-                           <span>окно</span>
-
-                        <img src="<?php bloginfo('template_url'); ?>/assets/img/dvuxokno.png">
+                           <span>Дверь</span>
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/dver.png">
                     </label>
         </div>
 

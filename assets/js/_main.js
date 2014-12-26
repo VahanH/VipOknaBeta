@@ -39,12 +39,6 @@ var Roots = {
       });
     }
   },
-  page_template_template_calculator_php: {
-    init: function() {
-      // JavaScript to be fired on the home page
-      console.log("Calculator");
-    }
-  },
   // About us page, note the change from about-us to about_us.
   about_us: {
     init: function() {

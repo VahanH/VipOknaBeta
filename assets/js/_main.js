@@ -22,7 +22,14 @@ var Roots = {
   // All pages
   common: {
     init: function() {
-      // JavaScript to be fired on all pages
+        $('.navbar-default .navbar-nav li').hover(
+            function() {
+                $(this).find('a').addClass('animated rotateIn');
+            },
+            function() {
+                $(this).find('a').removeClass('animated rotateIn');
+            }
+        );
     }
   },
   // Home page

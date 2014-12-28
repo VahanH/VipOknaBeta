@@ -40,9 +40,12 @@ footer{
   color:transparent;
   padding-top:20px;
   padding-bottom:20px;
+  .animated();
 }
-@media  (min-width: @screen-md-min) {
-  body {
-    margin-bottom: 60px;
-  }
+#menu-footer-navigation > li:hover {
+  background-color:#eee;
 }
+#menu-footer-navigation > li:hover > a{
+  .zoomIn();
+}
+

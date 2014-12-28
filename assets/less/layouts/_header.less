@@ -63,6 +63,15 @@
 
 }
 
+@media (min-width: @screen-md-min) {
+  .navbar-default .navbar-nav > li > a {
+    .animated();
+  }
+
+  .navbar-default .navbar-nav > li:hover > a,.navbar-default .navbar-nav > .active > a{
+    .flipInY();
+  }
+}
 @media (max-width: @screen-sm-max) {
   .navbar-default .navbar-nav > li:hover > a,.navbar-default .navbar-nav > .active > a {
     background-position: 10px 10px;

@@ -22,17 +22,30 @@ var Roots = {
   // All pages
   common: {
     init: function() {
-        if (Modernizr.mq('(min-width: 992px)')) {
-            $('.navbar-default .navbar-nav li').hover(
-                function() {
-                    $(this).find('a').addClass('animated rotateIn');
-                },
-                function() {
-                    $(this).find('a').removeClass('animated rotateIn');
-                }
-            );
-        }
-    }
+        var self = this;
+
+        $(window).resize(function(e) {
+            clearTimeout(self.resizeTimer);
+            self.resizeTimer = setTimeout(self.resizeFunction, 50);
+        });
+
+        this.resizeFunction();
+    },
+
+      resizeTimer: undefined,
+
+      resizeFunction: function() {
+          if (Modernizr.mq('(min-width: 992px)')) {
+              $('.navbar-default .navbar-nav li').hover(
+                  function() {
+                      $(this).find('a').addClass('animated rotateIn');
+                  },
+                  function() {
+                      $(this).find('a').removeClass('animated rotateIn');
+                  }
+              );
+          }
+      }
   },
   // Home page
   home: {

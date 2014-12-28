@@ -22,14 +22,16 @@ var Roots = {
   // All pages
   common: {
     init: function() {
-        $('.navbar-default .navbar-nav li').hover(
-            function() {
-                $(this).find('a').addClass('animated rotateIn');
-            },
-            function() {
-                $(this).find('a').removeClass('animated rotateIn');
-            }
-        );
+        if (Modernizr.mq('(min-width: 992px)')) {
+            $('.navbar-default .navbar-nav li').hover(
+                function() {
+                    $(this).find('a').addClass('animated rotateIn');
+                },
+                function() {
+                    $(this).find('a').removeClass('animated rotateIn');
+                }
+            );
+        }
     }
   },
   // Home page

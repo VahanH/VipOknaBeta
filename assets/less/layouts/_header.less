@@ -22,10 +22,6 @@
   }
 }
 
-.navbar-default .navbar-nav > .active, .navbar-default .navbar-nav > li:hover {
-
-}
-
 .navbar-default .navbar-nav > li > a {
   font-size: 14px;
   text-transform: uppercase;
@@ -67,14 +63,12 @@
 
 }
 
-@media (max-width: @screen-md-min) {
-  .navbar-default .navbar-nav > li:hover > a,.navbar-default .navbar-nav > .active > a{
+@media (max-width: @screen-sm-max) {
+  .navbar-default .navbar-nav > li:hover > a,.navbar-default .navbar-nav > .active > a {
     background-position: 10px 10px;
     padding: 15px 0 15px 45px;
-  }
-  .navbar-default .navbar-nav > .active, .navbar-default .navbar-nav > li:hover {
-    border-top:0;
-    border-left:4px solid #d83232;
+    border-top: 0;
+    border-left: 4px solid #d83232;
   }
   .navbar-header {
     .navbar-brand {

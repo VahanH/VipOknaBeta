@@ -49,7 +49,8 @@ function roots_gallery($attr) {
 
   $id = intval($id);
   $columns = (12 % $columns == 0) ? $columns: 4;
-  $grid = sprintf('col-sm-%1$s col-lg-%1$s', 12/$columns);
+  //$grid = sprintf('col-sm-%1$s col-lg-%1$s', 12/$columns);
+  $grid = 'col-xs-6 col-sm-3 col-md-2 col-lg-2';
 
   if ($order === 'RAND') {
     $orderby = 'none';
@@ -97,7 +98,7 @@ function roots_gallery($attr) {
         break;
     }
     $output .= ($i % $columns == 0) ? '<div class="row gallery-row">': '';
-    $output .= '<div class="' . $grid .'">' . $image;
+    $output .= '<div class="' . $grid .'" style="text-align:center">' . $image;
 
     if (trim($attachment->post_excerpt)) {
       $output .= '<div class="caption hidden">' . wptexturize($attachment->post_excerpt) . '</div>';
@@ -123,7 +124,7 @@ if (current_theme_supports('bootstrap-gallery')) {
  * Add class="thumbnail img-thumbnail" to attachment items
  */
 function roots_attachment_link_class($html) {
-  $html = str_replace('<a', '<a class="thumbnail fancybox img-thumbnail" href=""', $html);
+  $html = str_replace('<a', '<a class="thumbnail fancybox img-thumbnail" style="display:inline-block" ', $html);
   return $html;
 }
 add_filter('wp_get_attachment_link', 'roots_attachment_link_class', 10, 1);

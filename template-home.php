@@ -9,11 +9,12 @@ Template Name: Home
     $query->the_post(); ?>
     <div class="general-slider">
         <div class="sl-items">
-            <? echo get_the_post_thumbnail($id, 'full'); ?>
+            <? echo get_the_post_thumbnail($id); ?>
         </div>
+        <div class="owl-under-img-text">
             <h1><? the_title() ?></h1>
             <p><? the_content() ?></p>
-
+        </div>
     </div>
     <?
     endwhile;

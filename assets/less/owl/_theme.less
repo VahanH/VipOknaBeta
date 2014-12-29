@@ -51,27 +51,32 @@
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
   background: #869791;
 }
-
+.owl-under-img-text{
+  position: relative;
+}
 
 @media (max-width: @screen-xs-max) {
-  .owl-stage-outer{
+  .owl-stage-outer,.sl-items{
     max-height: 200px;
+  }
+  .owl-under-img-text{
+
   }
 }
 @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
-  .owl-stage-outer{
+  .owl-stage-outer,.sl-items{
     max-height: 440px;
   }
 
 }
 @media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
-  .owl-stage-outer{
+  .owl-stage-outer,.sl-items{
     max-height: 575px;
   }
 
 }
 @media (min-width: @screen-lg-min) {
-  .owl-stage-outer{
+  .owl-stage-outer,.sl-items{
       max-height: 620px;
   }
 }

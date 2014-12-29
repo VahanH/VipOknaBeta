@@ -27,10 +27,15 @@
     background-repeat: no-repeat;
     padding-top: 17px;
     padding-bottom: 17px;
-    background-position: 15px;
+    background-position: 20px;
+    display: inline-block;
+    margin-left: 0;
     span{
-      margin-left:60px;
+      margin-left:70px;
     }
   }
 }
 
+@media (max-width: @screen-xs-max) { .panel-body > .radio-35 > .wpcf7-radio > .wpcf7-list-item{ width:100%; }}
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { .panel-body > .radio-35 > .wpcf7-radio > .wpcf7-list-item{ width:33%; } }
+@media (min-width: @screen-md-min) { .panel-body > .radio-35 > .wpcf7-radio > .wpcf7-list-item{ width:25%; } }

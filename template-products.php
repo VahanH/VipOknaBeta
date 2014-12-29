@@ -40,7 +40,7 @@ endif;
 //wp_reset_query();
 
 ?>
-        <button type="button" class="btn btn-danger button-right button-margin prod-btn">Рассчитать стоимость</button>
+        <a href="<?php bloginfo('url'); ?>/kalkulyator/" class="btn btn-danger button-right button-margin prod-btn">Рассчитать стоимость</a>
     </div>
 </div>
 

@@ -5,8 +5,7 @@ Template Name: Articles
 */
 ?>
 <div>
-    <?php $category_name=str_replace("/", "",get_the_title() ); $query = new WP_Query(array('category_name' => $category_name ));
-    if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post(); ?>
+    <?php  if (have_posts()) : while (have_posts()) : the_post(); ?>
         <div class="row articlenews">
             <div class="col-lg-3 col-sm-4 thumbnail under-thumbnail-margin"><? echo get_the_post_thumbnail($id, 'medium'); ?></div>
             <div class="col-lg-9 col-sm-8 caption">

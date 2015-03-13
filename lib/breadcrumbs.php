@@ -63,7 +63,7 @@ function roots_bs3_breadcrumb() {
                 printf($link, $home_link . $slug['slug'] . '/', $post_type->labels->singular_name);
                 if ($show_current == 1){
                     $href= get_permalink();
-                 echo $delimiter . "<a href='$href'>" . $before . get_the_title(). "</a>". $after;
+                    echo $delimiter . "<a href='$href'>" . $before . get_the_title(). "</a>". $after;
                 }
             } else {
                 $cat = get_the_category(); $cat = $cat[0];
@@ -80,7 +80,8 @@ function roots_bs3_breadcrumb() {
             }
         } elseif ( !is_single() && !is_page() && get_post_type() != 'post' && !is_404() ) {
             $post_type = get_post_type_object(get_post_type());
-            echo $before . $post_type->labels->singular_name . $after;
+            $href= get_permalink();
+            echo $before. "<a href='$href'>" . $post_type->labels->singular_name . "</a>" . $after;
         } elseif ( is_attachment() ) {
             $parent = get_post($parent_id);
             $cat = get_the_category($parent->ID); $cat = $cat[0];
@@ -92,7 +93,10 @@ function roots_bs3_breadcrumb() {
                 echo $cats;
             }
             printf($link, get_permalink($parent), $parent->post_title);
-            if ($show_current == 1) echo $delimiter . $before . get_the_title(). $after;
+            if ($show_current == 1) {
+                $href= get_permalink();
+                echo $delimiter . $before. "<a href='$href'>" . get_the_title(). "</a>" . $after;
+            }
         } elseif ( is_page() && !$parent_id ) {
             if ($show_current == 1){
                 $href= get_permalink();
